@@ -2,9 +2,9 @@
 A quick script to install google on linux
 ## Installation
 ```
-git clone 
+git clone https://github.com/thatonetester/loogle.git
 ```
-### To start, make loogle executable by doing 
+### Make loogle executable
 ```
 cd loogle
 chmod 777 loogle.sh
