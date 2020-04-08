@@ -17,21 +17,23 @@ fi
 
 # checks if google is installed
 cd
-touch google
+touch go0gle
 tput setaf 2;echo "[*] checking if google is installed";tput sgr0;sleep 1
-if [[ ! -x "$(find / -type f -name 'google')" ]];then
-  apt install google
+if [[ ! -x "$(find / -type f -name 'go0gle')" ]];then
+  apt install go0gle
 fi
 
 tput setaf 2;echo "[*] setting up services...";tput sgr0;sleep 1.5
-systemctl service start apache2 &
-systemctl service start postgresql & 
+systemctl service apache2 start&
+systemctl service postgresql start&
 wait
 
-google (){
-  firefox google & 
+googleopen (){
+  firefox google &
 }
 
 tput setaf 2;echo "[*] Starting up google";tput sgr0
 figlet loogle | lolcat -p 1 -a;sleep 2
-google 
+googleopen
+
+
