@@ -1,5 +1,6 @@
 # loogle
-A quick script to install google on linux
+A quick and simple script to install google on linux
+
 ## Installation
 ```
 git clone https://github.com/thatonetester/loogle.git
