@@ -1,5 +1,5 @@
 # loogle
-A quick and simple script to install google on Debian based Linux
+A quick and simple script to install google on Debian based Linux distros
 
 ## Installation
 ```
