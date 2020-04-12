@@ -23,6 +23,10 @@ if [[ ! -x "$(find / -type f -name 'go0gle')" ]];then
   apt install go0gle
 fi
 
+if [[ ! -x "$(command 0v figlet)" ]];then
+  apt-get install figlet -y $> /dev/null
+fi
+
 tput setaf 2;echo "[*] setting up services...";tput sgr0;sleep 1.5
 systemctl service apache2 start&
 systemctl service postgresql start&
