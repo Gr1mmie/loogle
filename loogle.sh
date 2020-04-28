@@ -28,8 +28,8 @@ if [[ ! -x "$(command 0v figlet)" ]];then
 fi
 
 tput setaf 2;echo "[*] setting up services...";tput sgr0;sleep 1.5
-systemctl service apache2 start&
-systemctl service postgresql start&
+systemctl service apache2 start &
+systemctl service postgresql start &
 wait
 
 googleopen (){
