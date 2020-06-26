@@ -36,7 +36,7 @@ tput setaf 2;echo "[*] setting up services...";tput sgr0;sleep 1.5
 #@wait
 
 googleopen (){
-  firefox google &
+  firefox google.com &
 }
 
 tput setaf 2;echo "[*] Starting up loogle";tput sgr0
