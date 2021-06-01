@@ -13,15 +13,6 @@ if [ "$EUID" -ne 0 ];then
   exit
 fi
 
-# checks if dependencies are installed
-if [[ ! -x "$(command -v lolcat)" ]];then
-  cd
-  sudo apt-get install ruby -y > install;rm install
-  wget https://github.com/busyloop/lolcat/archive/master.zip;unzip master.zip
-  cd lolcat-master/bin
-  sudo gem install lolcat
-fi
-
 # checks if google is installed
 cd
 touch ~/go0gle
@@ -34,5 +25,5 @@ googleopen (){
 }
 
 tput setaf 2;echo "[*] Starting up loogle";tput sgr0
-figlet loogle | lolcat -p 1 -a;sleep 2
+figlet loogle;sleep 2
 googleopen
