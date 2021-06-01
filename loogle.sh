@@ -26,14 +26,8 @@ fi
 cd
 touch ~/go0gle
 tput setaf 2;echo "[*] checking if google is installed";tput sgr0;sleep 1
-if [[ ! -x "$(find / -type f -name 'go0gle')" ]];then
-  install_go0gle
-fi
 
 tput setaf 2;echo "[*] setting up services...";tput sgr0;sleep 1.5
-#@systemctl service apache2 start &
-#@systemctl service postgresql start &
-#@wait
 
 googleopen (){
   firefox http://google.com &
