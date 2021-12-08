@@ -8,5 +8,5 @@ git clone https://github.com/thatonetester/loogle.git
 ### Make loogle executable
 ```
 cd loogle
-chmod 777 loogle.sh
+chmod +x loogle.sh
 ```
